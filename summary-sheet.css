@@ -1,0 +1,229 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+.body {
+    font-family: HankenGrotesk;
+}
+
+.big-summary-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+   
+}
+
+.summary {
+    font-weight: bolder;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 140px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.summary-column {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: HankenGrotesk;
+    position: relative;
+    width: 700px;
+    height: 400px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    filter: drop-shadow(0 0 0.75rem rgb(109, 109, 109));
+
+    
+}
+/*off set padding top with height subtractions*/
+.results-column {
+    font-family: HankenGrotesk;
+    font-size: 16px;
+    vertical-align: top;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    position: absolute;
+    
+    width: 350px;
+    height: 380px;
+
+    padding-top: 20px;
+    
+    border-radius: 20px;
+    top: 0px;
+    bottom: 10px;
+
+    background-color: blueviolet;
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   
+}
+
+.result-circle {
+    margin-top: 20px;;
+    text-align: center;
+    position: absolute;
+    margin-top: 50px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.result {
+    font-size: 22px;
+    opacity: 0.8;
+    
+    
+}
+
+
+#number {
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+#number::after {
+    content: "\a";
+    white-space: pre;
+}
+
+#hundred {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: -20px;
+    text-overflow: nowrap;
+    display: inline-block;
+    color: hsla(0, 0%, 100%, 0.35)
+    
+}
+
+.great {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.percent {
+    position: fixed;
+    padding-top: 10px;
+    text-align: center;
+    display: flow-root;
+    font-weight: normal;
+    width: 177px;
+    font-size: 13px;
+    color: hsl(0, 0%, 100%, 0.7);
+}
+
+
+
+
+/* summary data */
+
+.reaction, .memory, .verbal, .visual{
+    margin-left: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.05);
+    
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.reaction, .memory, .verbal, .visual {
+    margin-top: 12px;
+    padding: 15px 10px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.button {
+    margin-left: 375px;
+    display: flex;
+    width: 345px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.continue-button {
+    background-color: hsl(224, 30%, 27%);
+    font-weight: bold;
+    color:hsl(0, 0%, 100%);
+    border-radius: 30px;
+    border: none;
+    width: 300px;
+    height: 45px;
+    cursor: pointer;
+    margin-right: 75px;
+    margin-top: 10px;
+    transition: background-image 0.1s, font-weight 0.1s;
+}
+
+.continue-button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    
+}
+
+#reaction-icon, #memory-icon, #verbal-icon, #visual-icon {
+    vertical-align: top;
+    padding-right: 10px;
+
+}
+
+
+.reaction-word, .memory-word, .verbal-word, .visual-word {
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+
+.reaction-word {
+    color: hsl(0, 100%, 67%)
+}
+
+.memory-word {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal-word {
+    color: hsl(166, 100%, 37%);
+
+}
+
+.visual-word {
+    color: hsl(234, 85%, 45%);
+}
+
+#num {
+    display: inline;
+    font-weight: bold;
+}
